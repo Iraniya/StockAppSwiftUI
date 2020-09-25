@@ -18,6 +18,9 @@
 		1C81A693251DF98300EE2C13 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A692251DF98300EE2C13 /* Webservice.swift */; };
 		1C81A696251DFA3100EE2C13 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A695251DFA3100EE2C13 /* Stock.swift */; };
 		1C81A699251E054800EE2C13 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A698251E054800EE2C13 /* SearchView.swift */; };
+		1C81A69B251E0EF200EE2C13 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A69A251E0EF200EE2C13 /* StockListView.swift */; };
+		1C81A69D251E0F2800EE2C13 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A69C251E0F2800EE2C13 /* StockViewModel.swift */; };
+		1C81A6A0251E10D300EE2C13 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A69F251E10D300EE2C13 /* StockListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1C81A692251DF98300EE2C13 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		1C81A695251DFA3100EE2C13 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		1C81A698251E054800EE2C13 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = StockAppSwiftUI/Models/SearchView.swift; sourceTree = SOURCE_ROOT; };
+		1C81A69A251E0EF200EE2C13 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StockListView.swift; path = StockAppSwiftUI/Models/StockListView.swift; sourceTree = SOURCE_ROOT; };
+		1C81A69C251E0F2800EE2C13 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		1C81A69F251E10D300EE2C13 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StockListViewModel.swift; path = StockAppSwiftUI/Models/StockListViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				1C81A697251E053400EE2C13 /* Views */,
+				1C81A69E251E101E00EE2C13 /* View Models */,
 				1C81A694251DFA2000EE2C13 /* Models */,
 				1C81A691251DF96E00EE2C13 /* Webservice */,
 				1C81A661251DF89B00EE2C13 /* AppDelegate.swift */,
@@ -165,8 +172,18 @@
 			isa = PBXGroup;
 			children = (
 				1C81A698251E054800EE2C13 /* SearchView.swift */,
+				1C81A69A251E0EF200EE2C13 /* StockListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1C81A69E251E101E00EE2C13 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C81A69C251E0F2800EE2C13 /* StockViewModel.swift */,
+				1C81A69F251E10D300EE2C13 /* StockListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C81A662251DF89B00EE2C13 /* AppDelegate.swift in Sources */,
+				1C81A6A0251E10D300EE2C13 /* StockListViewModel.swift in Sources */,
 				1C81A664251DF89B00EE2C13 /* SceneDelegate.swift in Sources */,
 				1C81A693251DF98300EE2C13 /* Webservice.swift in Sources */,
+				1C81A69B251E0EF200EE2C13 /* StockListView.swift in Sources */,
 				1C81A696251DFA3100EE2C13 /* Stock.swift in Sources */,
 				1C81A699251E054800EE2C13 /* SearchView.swift in Sources */,
 				1C81A666251DF89B00EE2C13 /* ContentView.swift in Sources */,
+				1C81A69D251E0F2800EE2C13 /* StockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

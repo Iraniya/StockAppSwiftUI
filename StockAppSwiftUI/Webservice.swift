@@ -11,7 +11,7 @@ import Foundation
 class Webservice {
     
     func getStock(completion: @escaping (([Stock]?) -> Void)) {
-        guard let url = URL(string: "") else {
+        guard let url = URL(string: "https://island-bramble.glitch.me/stocks") else {
             fatalError("URL is incorrect")
         }
         
