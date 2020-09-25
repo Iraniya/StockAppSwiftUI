@@ -17,6 +17,7 @@
 		1C81A684251DF89C00EE2C13 /* StockAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A683251DF89C00EE2C13 /* StockAppSwiftUIUITests.swift */; };
 		1C81A693251DF98300EE2C13 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A692251DF98300EE2C13 /* Webservice.swift */; };
 		1C81A696251DFA3100EE2C13 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A695251DFA3100EE2C13 /* Stock.swift */; };
+		1C81A699251E054800EE2C13 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81A698251E054800EE2C13 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1C81A685251DF89C00EE2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C81A692251DF98300EE2C13 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		1C81A695251DFA3100EE2C13 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		1C81A698251E054800EE2C13 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = StockAppSwiftUI/Models/SearchView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		1C81A660251DF89B00EE2C13 /* StockAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1C81A697251E053400EE2C13 /* Views */,
 				1C81A694251DFA2000EE2C13 /* Models */,
 				1C81A691251DF96E00EE2C13 /* Webservice */,
 				1C81A661251DF89B00EE2C13 /* AppDelegate.swift */,
@@ -156,6 +159,14 @@
 				1C81A695251DFA3100EE2C13 /* Stock.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1C81A697251E053400EE2C13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C81A698251E054800EE2C13 /* SearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				1C81A664251DF89B00EE2C13 /* SceneDelegate.swift in Sources */,
 				1C81A693251DF98300EE2C13 /* Webservice.swift in Sources */,
 				1C81A696251DFA3100EE2C13 /* Stock.swift in Sources */,
+				1C81A699251E054800EE2C13 /* SearchView.swift in Sources */,
 				1C81A666251DF89B00EE2C13 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
