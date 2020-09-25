@@ -22,7 +22,12 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView {
+        
+        let filteredStocks = self.stockListVM.searchTerm.isEmpty ? self.stockListVM.stocks : self.stockListVM.stocks.filter {
+            $0.symbol.starts(with: self.stockListVM.searchTerm)
+        }
+        
+        return NavigationView {
             ZStack(alignment: .leading) {
                 Color.black
                 Text("September 25 2020")
@@ -33,7 +38,7 @@ struct ContentView: View {
                 
                 SearchView(searchTerm: self.$stockListVM.searchTerm).offset(y:-350)
                 
-                StockListView(stocks: self.stockListVM.stocks)
+                StockListView(stocks: filteredStocks)
                     .offset(y:150)
             }
             .navigationBarTitle("Stock")
@@ -44,6 +49,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
     }
 }
